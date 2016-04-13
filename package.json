@@ -1,10 +1,14 @@
 {
   "name": "react-quick-quiz-app",
   "version": "0.0.0",
-  "description": "Simple quiz app written in React",
+  "description": "Simple quiz app written in React.js",
   "main": "index.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:eddowh/react-quick-quiz-app.git"
   },
   "author": "Eddo W. Hintoso",
   "license": "ISC",
