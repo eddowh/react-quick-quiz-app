@@ -3,8 +3,16 @@ import ReactDOM from 'react-dom';
 
 class Question extends Component {
 
-    onChange() {
-        return;
+    onChange(e) {
+        e.preventDefault();
+        const {setCurrent, setScore, question} = this.props;
+
+        let selected = e.target.value;
+        if (selected == question.correct) {
+            setScore(this.props.score+1);
+        }
+
+        setCurrent(this.props.current+1);
     }
 
     render() {
@@ -12,7 +20,7 @@ class Question extends Component {
         return (
             <div className="well">
                 <h3>
-                    {question.text}
+                    {question.id}) {question.text}
                 </h3>
                 <hr/>
                 <ul className="list-group">
